@@ -1,13 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de proyectos tecnicos con enfoque en accesibilidad, SEO y diseno responsivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Galeria de Proyectos Tecnicos</title>
 </head>
 <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
-    <script src="script.js"></script>
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <div class="app-shell">
+        <header class="hero" role="banner">
+            <p class="hero-eyebrow">Unidad I · Desarrollo Frontend</p>
+            <h1>Galeria de Proyectos Tecnicos Responsiva</h1>
+            <p>
+                Coleccion de iniciativas web con semantica HTML5, accesibilidad y
+                diseno adaptable para multiples dispositivos.
+            </p>
+            <section class="team" aria-labelledby="titulo-integrantes">
+                <h2 id="titulo-integrantes">Integrantes</h2>
+                <ul class="team-list">
+                    <li>Dias Vega Bruno Nivardo</li>
+                    <li>Huaynate Achachau Jose Luis</li>
+                    <li>Rodriguez Orihuela Scoot Fredy</li>
+                </ul>
+            </section>
+        </header>
+
+        <nav class="site-nav" role="navigation" aria-label="Navegacion principal">
+            <h2>Navegacion</h2>
+            <ul>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#integraciones">Integraciones</a></li>
+                <li><a href="#optimizacion">Optimizacion</a></li>
+            </ul>
+        </nav>
+
+        <main id="contenido-principal" tabindex="-1">
+            <section id="destacados" aria-labelledby="titulo-destacados">
+                <h2 id="titulo-destacados">Proyectos Destacados</h2>
+                <div class="card-row">
+                    <article class="project-card is-tall" aria-labelledby="p1-title">
+                        <p class="tag">A11y</p>
+                        <h3 id="p1-title">Sistema de Turnos Clinicos</h3>
+                        <p>
+                            Interfaz con componentes navegables por teclado, retroalimentacion de foco
+                            y estados accesibles para lectores de pantalla.
+                        </p>
+                    </article>
+
+                    <article class="project-card" aria-labelledby="p2-title">
+                        <p class="tag">SEO</p>
+                        <h3 id="p2-title">Portal de Turismo Regional</h3>
+                        <p>
+                            Estructura semantica con metadata optimizada, tiempos de carga reducidos y
+                            contenido indexable para motores de busqueda.
+                        </p>
+                    </article>
+
+                    <article class="project-card is-lifted" aria-labelledby="p3-title">
+                        <p class="tag">UX</p>
+                        <h3 id="p3-title">Dashboard Academico</h3>
+                        <p>
+                            Panel responsivo para seguimiento de rendimiento estudiantil con jerarquia
+                            visual clara y componentes reutilizables.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="integraciones" aria-labelledby="titulo-integraciones">
+                <h2 id="titulo-integraciones">Integraciones Recientes</h2>
+                <div class="card-row">
+                    <article class="project-card" aria-labelledby="p4-title">
+                        <p class="tag">APIs</p>
+                        <h3 id="p4-title">Monitoreo de Energia Domotica</h3>
+                        <p>
+                            Visualizacion de consumo en tiempo real con adaptacion fluida entre vistas
+                            compactas y paneles amplios.
+                        </p>
+                    </article>
+
+                    <article class="project-card is-wide" aria-labelledby="p5-title">
+                        <p class="tag">Data</p>
+                        <h3 id="p5-title">Mapa de Riesgo Ambiental</h3>
+                        <p>
+                            Integracion de datos georreferenciados para analisis territorial,
+                            priorizando contraste y legibilidad en capas informativas.
+                        </p>
+                    </article>
+
+                    <article class="project-card is-tall" aria-labelledby="p6-title">
+                        <p class="tag">Performance</p>
+                        <h3 id="p6-title">Biblioteca Digital Escolar</h3>
+                        <p>
+                            Catalogo de recursos con carga diferida de medios y arquitectura orientada
+                            a Core Web Vitals.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="optimizacion" aria-labelledby="titulo-optimizacion">
+                <h2 id="titulo-optimizacion">Optimizacion y Rendimiento</h2>
+                <div class="card-row">
+                    <article class="project-card" aria-labelledby="p7-title">
+                        <p class="tag">Grid + Flex</p>
+                        <h3 id="p7-title">Arquitectura Hibrida de Layout</h3>
+                        <p>
+                            Grid organiza la macroestructura del sitio y Flexbox administra filas de
+                            tarjetas con alturas variables tipo masonry sin JavaScript.
+                        </p>
+                    </article>
+
+                    <article class="project-card is-lifted" aria-labelledby="p8-title">
+                        <p class="tag">Dark Mode</p>
+                        <h3 id="p8-title">Tema Adaptativo Automatico</h3>
+                        <p>
+                            Cambio por preferencia del sistema usando `prefers-color-scheme` con
+                            transiciones suaves para evitar saltos visuales.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
